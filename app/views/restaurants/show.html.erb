@@ -1,1 +1,16 @@
-show.html.erb
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Discover "<strong><%= @restaurant.name %></strong>"</h1>
+    </div>
+    <div class="col-xs-12">
+      <p><strong>Category: </strong><%= @restaurant.category.capitalize %></p>
+      <p><strong>Adress: </strong><%= @restaurant.address %></p>
+      <p><strong>Phone: </strong><%= @restaurant.phone_number %></p>
+    </div>
+  </div>
+</div>
+
+
+
+
