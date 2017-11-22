@@ -10,16 +10,18 @@
     <%= link_to 'Add your restaurant', new_restaurant_path, class: "btn btn-danger" %>
   </div>
 
-  <% @restaurants.each do |restaurant| %>
+
   <div class="row">
+    <% @restaurants.each do |restaurant| %>
     <div class="col-xs-12 col-md-4">
-      <div class="card">
-        <h3><%= restaurant.name %></h3>
-        <%= restaurant.address %>
-        <%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary" %>
-      </div>
+      <h3><%= restaurant.name %></h3>
+      <%= restaurant.address %>
+      <br>
+      <%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary" %>
+      <hr>
     </div>
+    <% end %>
   </div>
-  <% end %>
+
 
 </div>
