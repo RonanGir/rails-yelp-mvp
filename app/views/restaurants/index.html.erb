@@ -6,8 +6,11 @@
     </div>
   </div>
 
+  <div>
+    <%= link_to 'Add your restaurant', new_restaurant_path, class: "btn btn-danger" %>
+  </div>
+
   <% @restaurants.each do |restaurant| %>
-  <h2><%= restaurant.category %></h2>
   <div class="row">
     <div class="col-xs-12 col-md-4">
       <div class="card">
